@@ -1,0 +1,123 @@
+{% macro about() %}
+ <div class="user-details">
+  <h1> About LitFlix </h1>
+  <p> 
+     {{ config.extra.user_description }}
+  </p>
+
+    <h1><a href="https://register.spinoza.dedyn.io/invite/FXSxrz42zFxAYxsdcgAcY9" target="_blank" class="project-link">Register New Account</a></h1>
+    <p>Free registrations are ongoing. Make an account and watch LitFlix now!</p>
+</div>
+  <div class="user">
+    <div class="tech">
+      <h2>Monthly Subscription</h2>
+      <p>₱300 per month</p>
+    </div>
+    <div class="tech">
+      <h2>Yearly Subscription</h2>
+      <p>₱3000 per year (₱250 per month)</p>
+    </div>
+    <!-- <div class="tech"> -->
+      <!-- <p>We didn't exaggerate when we said everything you want is in Litflix. Documentaries, sports, anime, kids content. All in one convenient place</p> -->
+    <!-- </div> -->
+  </div>
+
+
+
+{% endmacro about %}
+
+{% macro projects() %}
+<div class="user-details">
+  <h1>Features</h1>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <a  href="https://litflix.spinoza.dedyn.io" target="_blank">
+      <img alt="mountains" src="{{ config.base_url ~ "/img/example1.png" }}" />
+    </a>
+  </div>
+  <div class="contents">
+    <h3>All the shows, all the movies, all in one place</h3>
+    <ul>
+      <li>What streaming should have been</li>
+    </ul>
+    <p>We provide all your favorite TV shows at the maximum quality. No hidden fees, no price hikes. Nothing will ever be removed from our catalogue. Only added.
+      Access the server through this link: <a href="https://litflix.spinoza.dedyn.io">https://litflix.spinoza.dedyn.io</a>
+    </p>
+    <a class="project-link" href="https://litflix.spinoza.dedyn.io">LitFlix Main Page</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-left">
+  <a  href="https://requests.spinoza.dedyn.io" target="_blank">
+    <img alt="mountains" src="{{ config.base_url ~ "/img/example2.png" }}" href="https://requests.spinoza.dedyn.io"/>
+  </div>
+  </a>
+  <div class="contents-right">
+    <h3>Anything missing? Add it!</h3>
+    <ul>
+      <li>Endless hours of customized entertainment</li>
+    </ul>
+    <p>We provide a service so you can request shows or movies that you'd like to see in our catalogue.
+      Access the requests server through this link: <a href="https://requests.spinoza.dedyn.io">https://requests.spinoza.dedyn.io</a></p>
+    <a class="project-link" href="https://requests.spinoza.dedyn.io">Requests Page</a>
+  </div>
+</div>
+
+
+<div class="user-projects">
+  <div class="images-right"> <img alt="mountains" src="{{ config.base_url ~ "/img/example4.png" }}" /> </div>
+  <div class="contents">
+    <h3>Watch on all your devices</h3>
+    <ul>
+      <li>Supported on iOS, Android, and Smart TVs</li>
+    </ul>
+    <p>LitFlix is powered by an open-source media server Jellyfin. Jellyfin is supported in most iOS and Android devices. Check your smart TV for a Jellyfin app! Currently known Smart TVs which support Jellyfin are:    </p>
+
+    <ul>
+      <a href="https://channelstore.roku.com/details/cc5e559d08d9ec87c5f30dcebdeebc12/jellyfin" target="_blank"><li>Roku</li></a>
+      <a href="https://www.amazon.com/gp/aw/d/B07TX7Z725" target="_blank"><li>Amazon Fire TV</li></a>
+      <a href="https://play.google.com/store/apps/details?id=org.jellyfin.androidtv" target="_blank"><li>Google TV</li></a>
+      <a href="https://us.lgappstv.com/main/tvapp/detail?appId=1030579" target="_blank"><li>LG webOS</li></a>
+    </ul>
+
+    <a class="project-link" href="https://litflixinfo.pages.dev/tutorial">Tutorial page to add LitFlix to iOS, Android, and more</a>
+
+  </div>
+</div>
+
+
+<!-- <div class="user-projects">
+     <div class="images-left">
+     <img alt="mountains" src="{{ config.base_url ~ "/img/mr-robot.png" }}" />
+     </div>
+     <div class="contents-right">
+     <h3>Secure Privacy Policy</h3>
+     <ul>
+     <li>Keep your data. We don't want it</li>
+     </ul>
+     <p>Here at Spinoza, we never sell or expose your data for profit. We believe in an open internet, so we will never impose policies or push updates that will harm the consumer. There is a lot to be said with the privacy policies of major streaming sites like Netflix. There, you are both the customer and the product. Here, you are our valued customer, and we won't sell you out</p>
+     <p>We do not collect any personal data from our users. We do not use cookies, analytics tools, or any other tracking mechanisms that may capture your personal information. When you visit our website, your privacy is paramount, and you can browse our site anonymously without the risk of your data being collected, stored, or shared.</p>
+     <p>While we do not collect any personal data, we take data security seriously. Our website and systems are designed to safeguard against unauthorized access or disclosure. We employ industry-standard security measures to ensure the integrity and confidentiality of any data that you may inadvertently provide to us. Rest assured that your privacy and data security are our top priorities.</p>
+     <a class="project-link" href="https://ko-fi.com/spinozaentertainment">Check it out</a>
+     </div>
+
+
+     </div> -->
+
+
+ <div class="user-details">
+  <h1>Manage your account</h1>
+  <p>
+     After creating an account here, head over to
+    <a href="https://register.spinoza.dedyn.io/my/account" target="_blank"> https://register.spinoza.dedyn.io/my/account </a> to access your referral links and manage your account, such as
+    resetting forgotten passwords or changing current passwords.
+  </p>
+  <p>
+    Invite 5 friends over with the referral links in your account to and earn up to a 25% discount on your monthly or yearly fee! Use the referral links inside your account and send it
+  </p>
+ </div>
+{% endmacro projects %}
+
